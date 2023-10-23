@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     setTheme("system");
-  }, []);
+  }, [setTheme]);
 
   return (
     <main className="flex flex-col-reverse items-center md:flex-row p-24 min-h-screen justify-between">
@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <h1 className="text-xl font-bold">Hi, my name is Max Chan</h1>
           <p>
-            I'm a Software Engineer <br />
+            I&apos;m a Software Engineer <br />
             with a focus in iOS development.
           </p>
         </div>
