@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import ProfileImage from "../public/profile.png";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -34,7 +35,7 @@ export default function Home() {
       </div>
       <div className="relative aspect-square h-full w-full">
         <Image
-          src={"/profile.png"}
+          src={ProfileImage}
           fill
           alt="profile image"
           className="object-fill"
